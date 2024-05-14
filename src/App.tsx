@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import init, { InitOutput } from "./lib/hello_world";
 import wasmUrl from "./assets/hello_world_bg.wasm?url";
+import init, { type InitOutput } from "./lib/hello_world";
 
 function App() {
   const [wasm, setWasm] = useState<InitOutput | null>(null);
